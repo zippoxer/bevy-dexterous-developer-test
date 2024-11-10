@@ -1,0 +1,52 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Isometric.tsx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "Characters.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Isometric.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 3
+        },
+        "iso_256x128_dominance.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "untitled.tmx": {
+            "scale": 8,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 406,
+                "y": 156.6875
+            }
+        }
+    },
+    "last.imagePath": "",
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": "1",
+    "map.orientation": "2",
+    "map.renderOrder": "0",
+    "map.tileHeight": 16,
+    "openFiles": [
+        "Isometric.tsx"
+    ],
+    "project": "testmap.tiled-project",
+    "recentFiles": [
+        "Isometric.tsx",
+        "Characters.tsx",
+        "iso_256x128_dominance.tsx",
+        "untitled.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 48,
+        "width": 32
+    }
+}

@@ -7,15 +7,20 @@ edition = "2021"
 
 [dependencies]
 avian2d = "0.1.2"
-bevy = "0.14.2"
+bevy = { version = "0.14.2", features = [
+    "dynamic_linking",
+    "embedded_watcher",
+] }
 bevy-inspector-egui = "0.27.0"
 bevy_ecs_tiled = "0.3.10"
 bevy_ecs_tilemap = "0.14.0"
 bevy_rapier2d = "0.27.0"
+bevy_dexterous_developer = { git = "https://github.com/lee-orr/dexterous_developer.git", package = "bevy_dexterous_developer" }
+serde = "1"
 
-[[bin]]
-name = "sabre"
-path = "main.rs"
+[features]
+default = []
+hot = ["bevy_dexterous_developer/hot"]
 
 # Enable a small amount of optimization in the dev profile.
 [profile.dev]
@@ -25,12 +30,4 @@ codegen-backend = "cranelift"
 # Enable a large amount of optimization in the dev profile for dependencies.
 [profile.dev.package."*"]
 opt-level = 3
-
-# for Linux
-[target.x86_64-unknown-linux-gnu]
-linker = "clang"
-rustflags = ["-C", "link-arg=-fuse-ld=lld"]
-
-# for Windows
-[target.x86_64-pc-windows-msvc]
-linker = "rust-lld.exe"
+codegen-backend = "llvm"
